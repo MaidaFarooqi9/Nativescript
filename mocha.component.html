@@ -1,0 +1,37 @@
+<ActionBar title="Mocha" class="action-bar">
+</ActionBar>
+
+<ScrollView class="bg">
+    <GridLayout class="home-panel">
+        <Label class ="heading" text="Select your mocha" ></Label>
+
+
+    <ListView  class="list" [items]="Mocha" (itemTap)="onItemTap($event)"
+        style="height:1250px">
+        <ng-template let-mocha="item">
+            <FlexboxLayout flexDirection="row">
+                <Image [src]="mocha.imageSrc" class="thumb img-circle">
+                </Image>
+                <Label [text]="mocha.name" class="t-12"
+                    verticalAlignment="center" style="width: 60%"></Label>
+            </FlexboxLayout>
+        </ng-template>
+    </ListView>
+<Label  class="quantity" [text]="x"></Label>
+
+<Button class="r" text="Remove" (tap)="del()"></Button>
+
+<Label class="t" [text]="o"></Label>
+
+<Button class="co" text="Confirm Order" (tap)="done()"></Button>
+
+
+
+
+
+
+
+
+
+    </GridLayout>
+</ScrollView>
