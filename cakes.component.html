@@ -1,0 +1,26 @@
+<ActionBar title="Bake a cake"></ActionBar>
+<GridLayout>
+    <ScrollView>
+        <StackLayout class="bg">
+           <!-- <Label class="title" text=" Central Perk"></Label>
+            <Label class="subtitle" text="Bake a Cake!"></Label> -->
+            <Image
+                src="https://www.munatycooking.com/wp-content/uploads/2018/08/Red-velvet-cake-recipe-feature.jpg">
+            </Image>
+            <Button text="Red Velvet" pagetransition="flip"
+               (tap)="redVelvet()"></Button>
+            <Image
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR53j1xEjaK-zqdABecFMBrHak19RjK_8C1HiHK6o2nFXY1OWIb">
+            </Image>
+            <Button text="Cheese Cake" pagetransition="flip"
+              (tap)="cheese()"  ></Button>
+            <Image
+                src="https://www.temptationscakes.com.sg/wp-content/uploads/2018/10/temptations-cake-slices-01.jpg">
+            </Image>
+            <Button text="Oreo Cake"  (tap)="oreo()" ></Button>
+
+
+            <label [text]="c"></label>
+        </StackLayout>
+    </ScrollView>
+</GridLayout>

@@ -1,0 +1,21 @@
+.bg{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSbLaCHCZ7kA3FVWCd5-nrST9YvYCiED0KIjbhu7FzyHwChdLOr");
+    background-repeat: no-repeat;
+   background-size:cover;
+
+    }
+    Image{
+
+        height: 1000px;
+        width: 1000px;
+        margin:45 45 45 45;
+        }
+
+        Button{
+            background-color: plum;
+            font-family:fantasy;
+            font-size: 18px;
+            width: 50%;
+            border-radius: 50px;
+
+        }
