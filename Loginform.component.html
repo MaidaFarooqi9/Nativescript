@@ -1,0 +1,60 @@
+<ActionBar title="Login">
+</ActionBar>
+
+<GridLayout>
+    <ScrollView>
+        <StackLayout class="form" [formGroup]="form">
+
+
+
+
+            <Label class="heading" text="Register yourself!"></Label>
+            <Label></Label>
+            <StackLayout class="beige">
+
+           <!-- <Label
+                class="label"
+                text="Title"
+                [ngClass]="{ invalid: !titleCtrl.valid && titleCtrl.touched }"
+              ></Label>
+-->
+            <Image
+                src="https://www.freeiconspng.com/uploads/login-button-png-0.png"
+                height="500px" width="50%">
+            </Image>
+            <TextField class="input" hint="email" #EmailEl required returntype="next" KeyboardType="email" formControlName="email"></TextField> <!--ngModel #titleCtrl="ngModel" -->
+            <TextField class="input" hint="Password" #PasswordEl  secure="true"  required returntype="next"KeyboardType="password" formControlName="password"></TextField> <!--ngModel #titleCtrl="ngModel"-->
+
+            <Label *ngIf="!emailControlValid" text="Enter valid email"></Label>
+
+            <Label *ngIf="!passwordControlValid" text="Enter atleast 5digit password"></Label>
+            <StackLayout *ngIf="!isLoggingIn"  class="input-field">
+                <TextField class="input" hint="Confirm password" secure="true"  required returntype="next"></TextField>
+                <!--ngModel #titleCtrl="ngModel"> -->
+                  <!-- <Label
+                *ngIf="!titleCtrl.valid && titleCtrl.touched"
+                text="Please enter a valid title."
+              ></Label>  -->
+
+
+            </StackLayout>
+
+            <Button [text]="isLoggingIn ? 'Sign In' :'Sign Up'"
+             (tap)="login()"  [isEnabled]="form.valid" ></Button> <!--[isEnabled]="titleCtrl.valid" -->
+
+        </StackLayout>
+            <Label  (tap)="toggleForm()">
+                <FormattedString class="toggle">
+                    <Span
+                        [text]="isLoggingIn ? 'Don’t have an account?       ' : '    Back to Login   '">
+                    </Span>
+                    <Span [text]="isLoggingIn ? '    Sign up' : ''" class="bold">
+                    </Span>
+                </FormattedString>
+            </Label>
+
+
+
+        </StackLayout>
+    </ScrollView>
+</GridLayout>

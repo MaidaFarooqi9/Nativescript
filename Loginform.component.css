@@ -1,0 +1,71 @@
+
+.form{
+    background-image: url("https://thumbs.dreamstime.com/z/porridge-plum-grapes-cup-coffee-healthy-breakfast-concept-fresh-green-ingredients-over-wooden-background-129963120.jpg");
+background-size:cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+
+}
+
+
+.input.ng-invalid.ng-touched{
+    color: red;
+    border-bottom-color:red;
+
+}
+.input{
+    color:black;
+    align-items: center;
+    flex-direction: center;
+    width:50%;
+    background-color: beige;
+
+
+
+}
+
+.beige{
+
+    margin:30 35 30 35;
+    border-style: solid;
+    background-color: beige;
+
+
+}
+
+
+
+.heading{
+    text-align: center;
+    font-size: 33px;
+font-weight: bold;
+text-shadow: darkgrey;
+color:indigo;
+padding-top: 18px ;
+margin-bottom: 8px;
+
+}
+
+Image{
+    flex-direction: center;
+
+
+}
+Button{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    vertical-align: bottom;
+    width :30%;
+    border:50%;
+    background-color:plum;
+    border-radius: 50px;
+
+}
+
+.toggle{
+    font-size: 20px;
+padding-top: 7px;
+    color:indigo;
+    margin:8 8 8 8;
+background-color: plum;
+}
