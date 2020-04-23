@@ -1,0 +1,13 @@
+
+
+<ActionBar title="Central Perk"></ActionBar>
+<TabView class="tabview" androidSelectedTabHighlightColor="#7c015d" selectedTabTextColor="aqua" >
+    <StackLayout  *tabItem="{title:'coffee'}">
+          <page-router-outlet  name="coffee"></page-router-outlet>
+        </StackLayout>
+
+        <StackLayout *tabItem="{title:'cakes'}" >
+         <page-router-outlet name="cakes"></page-router-outlet>
+        </StackLayout>
+
+</TabView>
