@@ -1,0 +1,34 @@
+<ActionBar title="Latte" class="action-bar">
+</ActionBar>
+
+<ScrollView class="bg">
+    <GridLayout class="home-panel">
+        <Label class="heading" text="Select your latte "></Label>
+
+
+    <ListView  class="list" [items]="Latte" (itemTap)="onItemTap($event)"
+    style="height:2250px"> >
+        <ng-template let-latte="item">
+            <FlexboxLayout flexDirection="row">
+                <Image [src]="latte.imageSrc" class="thumb img-circle">
+                </Image>
+                <Label [text]="latte.name" class="t-12"
+                    verticalAlignment="center" style="width: 60%"></Label>
+            </FlexboxLayout>
+        </ng-template>
+    </ListView>
+
+
+    <Label  class="quantity" [text]="x"></Label>
+<Label text=""></Label>
+    <Button class="r" text="Remove" (tap)="del()"></Button>
+
+    <Label class="t" [text]="o"></Label>
+
+    <Button class="co" text="Confirm Order" (tap)="done()"></Button>
+
+
+
+
+    </GridLayout>
+</ScrollView>
