@@ -1,0 +1,25 @@
+<ActionBar title=" Coffee for all!"></ActionBar>
+
+<GridLayout>
+    <ScrollView>
+        <StackLayout class="bg">
+           <!--- <Label class="title" text=" Central Perk"></Label>
+            <Label class="subtitle" text="Coffee for all!"></Label> -->
+            <Image
+                src="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+            </Image>
+            <Button text="Latte" pagetransition="flip"
+               (tap)="latte()"></Button>
+            <Image
+                src="https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/ways-to-make-coffee-super-healthy-1296x728-feature.jpg?w=1155&h=1528">
+            </Image>
+            <Button text="Mocha" pagetransition="flip"
+              (tap)="mocha()"  ></Button>
+            <Image
+                src="https://cdn-image.foodandwine.com/sites/default/files/1568907144/Coffee-National-Coffee-Day-FT-Blog0919.jpg">
+            </Image>
+            <Button text="Cappuchino"  (tap)="cappuchino()" ></Button>
+
+        </StackLayout>
+    </ScrollView>
+</GridLayout>
